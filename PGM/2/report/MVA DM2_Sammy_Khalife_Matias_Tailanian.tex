@@ -67,9 +67,9 @@ Hence, $L(G)=L(G^{'})$.
 ~\\
 - As $G$ is a directed tree, it's also a \emph{graph}, so $p(x)$ factorizes in $G$:
 $$p(x) = \prod^n_{i=1}p(x_i|x_{\pi_i})$$
-As $G$ is a directed tree with no \emph{v-structures}, it has the same quantity of \emph{edges} as \emph{clicks}: $n-1$. Furthermore each click has two elements, i.e. sets parent-children. Dividing and multiplying the previous expression by $n-1$, and defining $\psi = (n-1)f(x_i,x_{\pi_i})$ and $Z=n-1$ (the number of clicks), we obtain:
+As $G$ is a directed tree with no \emph{v-structures}, it has the same quantity of \emph{edges} as \emph{clicks}: $n-1$. Furthermore each click has two elements, i.e. sets parent-children. Dividing and multiplying the previous expression by $n-1$, and defining $\psi_{c} = (n-1)f(x_c,x_{\pi_c})$ (without ambiguity because there is only one node having no parents in the clique) and $Z=n-1$ (the number of clicks), we obtain:
 $$p(x) = \frac{1}{Z}\prod_{c\in \mathcal{C}}\psi_c(x_c)$$
-where $\mathcal{C}$ is the set of clicks of $G$. This expression also corresponds to the symetrized graph $G^\prime$ of $G$, which has $Z=n-1$ clicks of cardinal $2$, $\{x_k, x_{\pi_k}\}$, proving: $\mathcal{L}(G)\subseteq \mathcal{L}(G^\prime)$.
+where $\mathcal{C}$ is the set of clicks of $G$. This expression corresponds to a factorization in the symetrized graph $G^\prime$ of $G$, which has $Z=n-1$ clicks of cardinal $2$, $\{x_k, x_{\pi_k}\}$, proving: $\mathcal{L}(G)\subseteq \mathcal{L}(G^\prime)$.
 ~\\
 ~\\
 In the other hand, as $E^\prime \subseteq E$, by \textbf{proposition 4.4}: $\mathcal{L}(G^\prime)\subseteq \mathcal{L}(G)$.
