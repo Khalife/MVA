@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="dagsDiagrams.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3762"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3762-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3762-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="98.086418"
+     inkscape:cy="594.27914"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:#75507b;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path9156"
+       sodipodi:cx="396.98996"
+       sodipodi:cy="527.33539"
+       sodipodi:rx="28.284271"
+       sodipodi:ry="44.194176"
+       d="m 425.27423,527.33539 a 28.284271,44.194176 0 1 1 -56.56854,0 28.284271,44.194176 0 1 1 56.56854,0 z"
+       transform="translate(105.05586,136.37059)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ce5c00;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path9154"
+       sodipodi:cx="318.19806"
+       sodipodi:cy="491.72751"
+       sodipodi:rx="29.294424"
+       sodipodi:ry="30.809652"
+       d="m 347.49248,491.72751 a 29.294424,30.809652 0 1 1 -58.58884,0 29.294424,30.809652 0 1 1 58.58884,0 z"
+       transform="translate(112.12693,130.81475)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#4e9a06;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path9152"
+       sodipodi:cx="238.90108"
+       sodipodi:cy="529.35571"
+       sodipodi:rx="31.31473"
+       sodipodi:ry="66.922607"
+       d="m 270.21581,529.35571 a 31.31473,66.922607 0 1 1 -62.62946,0 31.31473,66.922607 0 1 1 62.62946,0 z"
+       transform="matrix(1.0080645,0,0,1.1283019,99.846248,69.463411)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(-128.28938,139.14852)"
+       sodipodi:type="arc"
+       style="fill:#edd400;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path9156-0"
+       sodipodi:cx="396.98996"
+       sodipodi:cy="527.33539"
+       sodipodi:rx="28.284271"
+       sodipodi:ry="44.194176"
+       d="m 425.27423,527.33539 a 28.284271,44.194176 0 1 1 -56.56854,0 28.284271,44.194176 0 1 1 56.56854,0 z"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#75507b;fill-opacity:0.57534246000000000;fill-rule:nonzero;stroke:none"
+       id="path6569"
+       sodipodi:cx="464.64285"
+       sodipodi:cy="223.43361"
+       sodipodi:rx="38.214287"
+       sodipodi:ry="79.64286"
+       d="m 502.85714,223.43361 a 38.214287,79.64286 0 1 1 -76.42857,0 38.214287,79.64286 0 1 1 76.42857,0 z"
+       transform="matrix(0.97381147,0.22735702,-0.22735702,0.97381147,44.396081,-81.931272)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ce5c00;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path6567"
+       sodipodi:cx="341.07144"
+       sodipodi:cy="200.93361"
+       sodipodi:rx="29.642857"
+       sodipodi:ry="55.714287"
+       d="m 370.7143,200.93361 a 29.642857,55.714287 0 1 1 -59.28571,0 29.642857,55.714287 0 1 1 59.28571,0 z"
+       transform="matrix(1.1275652,0.06344408,-0.02685174,1.2640142,-32.04201,-85.759727)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#339900;fill-opacity:0.57534246000000000;fill-rule:nonzero;stroke:none"
+       id="path6565"
+       sodipodi:cx="225"
+       sodipodi:cy="272.36218"
+       sodipodi:rx="41.42857"
+       sodipodi:ry="111.42857"
+       d="m 266.42857,272.36218 a 41.42857,111.42857 0 1 1 -82.85714,0 41.42857,111.42857 0 1 1 82.85714,0 z"
+       transform="matrix(0.98430593,-0.17647049,0.17647049,0.98430593,-26.675579,38.266045)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#edd400;fill-opacity:0.57534246;fill-rule:nonzero;stroke:none"
+       id="path6563"
+       sodipodi:cx="96.071426"
+       sodipodi:cy="226.29076"
+       sodipodi:rx="60.357143"
+       sodipodi:ry="89.64286"
+       d="m 156.42857,226.29076 a 60.357143,89.64286 0 1 1 -120.714287,0 60.357143,89.64286 0 1 1 120.714287,0 z"
+       transform="matrix(0.57001845,-0.34878027,0.32562979,1.063998,-5.9494979,50.097084)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 117.77048,218.89483 c 17.19979,-12.67767 62.42386,-28.64577 108.5863,-22.12439"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-27.683828,-31.948516)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-43.877523,-4.3863731)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-11.738607,18.266201)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-4"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-156.30946,-6.2221069)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-1"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-137.65289,21.340031)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-4"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-152.48607,54.094128)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-5"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(72.622108,-55.663226)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-9"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(99.359901,-31.131545)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-6"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(86.547024,-3.9332878)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-2"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(189.29473,-29.904336)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-8"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(193.30409,2.7085653)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(167.35922,24.350983)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-4"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(182.11504,55.559633)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-122.44594,84.34898)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 210.61681,223.78456 c -28.78935,1.51523 -63.13454,13.13198 -78.7919,20.70812"
+       id="path4332"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 241.93153,247.2706 c -46.21447,1.51523 -107.83378,22.4759 -122.98607,31.06219"
+       id="path4516"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 244.70945,195.24775 c 36.11296,0.25254 73.99368,-11.8693 84.0952,-17.1726"
+       id="path4700"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 354.05847,199.28836 c -35.35534,17.42513 -106.5711,22.98097 -125.76399,23.48604"
+       id="path5066"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 341.17902,227.06755 c -27.27412,11.86929 -59.85154,15.9099 -80.30712,18.18275"
+       id="path5250"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 343.7044,169.23632 c 28.78935,-4.54569 76.01398,8.33376 99.50003,23.73858"
+       id="path5434"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 446.73996,226.0574 C 421.73869,207.36958 400.10272,200.50772 371.42232,195.88281"
+       id="path5618"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 356.20876,231.01408 c 18.63341,11.5844 36.56414,19.17501 65.38199,21.61366"
+       id="path5802"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-2"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-6.7834765,68.186544)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-3"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-3.2899963,118.49112)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 436.07143,287.36218 c -54.28572,20.35714 -133.92857,16.42857 -170.71429,11.07143"
+       id="path6011"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 148.57143,314.1479 c 36.42857,10.71428 65,5.35714 99.64286,-12.85715"
+       id="path6195"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 255.71429,305.57647 c 0.71428,6.78571 2.14285,20 3.21428,31.42857"
+       id="path6379"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-6"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-154.28572,-39.999994)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-5"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(92.142856,-84.28571)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-9"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-79.285718,-99.285707)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-0"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(-24.285718,-129.28571)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 342.85714,143.07647 c -44.28571,7.85714 -113.57143,0 -145.71428,-10"
+       id="path6610"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 117.14286,183.79075 c 27.85714,-9.28571 45.71428,-29.28571 60,-47.14285"
+       id="path6794"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 189.28571,122.00504 c 11.07143,-9.28572 25.35715,-16.07143 40,-20.35714"
+       id="path6978"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="72.857147"
+       y="354.50504"
+       id="text7162"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7164"
+         x="72.857147"
+         y="354.50504"
+         style="font-weight:bold;fill:#edd400;-inkscape-font-specification:Sans Bold">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="292.85715"
+       y="363.07648"
+       id="text7166"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7168"
+         x="292.85715"
+         y="363.07648"
+         style="font-weight:bold;fill:#4e9a06;-inkscape-font-specification:Sans Bold">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="380"
+       y="143.07648"
+       id="text7170"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7172"
+         x="380"
+         y="143.07648"
+         style="font-weight:bold;fill:#f57900;-inkscape-font-specification:Sans Bold">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="489.28571"
+       y="180.93359"
+       id="text7174"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7176"
+         x="489.28571"
+         y="180.93359"
+         style="font-weight:bold;fill:#ad7fa8;-inkscape-font-specification:Sans Bold">B</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 115,289.86218 c 7.85714,10.71429 5.35714,9.64286 16.78571,18.57143"
+       id="path7178"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 244.64286,253.79075 C 221.78571,275.21932 175,297.71932 150.71429,308.43361"
+       id="path7362"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 338.57143,164.1479 c 0,0 -0.71428,0.71428 10.35714,-13.92858"
+       id="path7546"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 451.78572,276.29075 C 463.21429,265.21932 462.5,250.57647 460.35714,240.21932"
+       id="path7914"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 423.57143,244.86218 C 406.78572,225.93361 389.28572,212.36219 369.64285,203.07647"
+       id="path8098"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagComplex.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-97"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(3.9715276,437.24174)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-1"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(78.069337,394.46581)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-07"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="translate(78.01069,481.32148)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-97-3"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="matrix(-1,0,0,1,766.59297,437.25047)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4199-3-2-1-0-1-2"
+       sodipodi:cx="262.85715"
+       sodipodi:cy="228.07646"
+       sodipodi:rx="7.1428571"
+       sodipodi:ry="7.1428571"
+       d="m 270,228.07646 a 7.1428571,7.1428571 0 1 1 -14.28571,0 7.1428571,7.1428571 0 1 1 14.28571,0 z"
+       transform="matrix(-1,0,0,1,692.49516,394.47454)"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 273.24627,657.89762 c 15.65736,-14.14214 31.8198,-24.24366 57.57869,-33.84011"
+       id="path8371"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 271.73104,674.3126 c 15.65736,14.14214 31.8198,24.24366 57.57869,33.84011"
+       id="path8371-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 438.82841,623.83754 c 20.20411,6.07842 37.2122,14.68017 58.75459,31.75465"
+       id="path8371-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="m 348.25009,618.75421 c 17.1726,-6.31346 54.54824,-7.07107 72.98352,0"
+       id="path8590"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="M 497.75267,671.53468 C 450.2755,704.1121 426.03183,710.93063 350.2704,709.16286"
+       id="path8964"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="253.22206"
+       y="615.90912"
+       id="text7162-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7164-4"
+         x="253.22206"
+         y="615.90912"
+         style="font-weight:bold;fill:#edd400;-inkscape-font-specification:Sans Bold">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="328.3038"
+       y="585.09949"
+       id="text7166-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7168-2"
+         x="328.3038"
+         y="585.09949"
+         style="font-weight:bold;fill:#4e9a06;-inkscape-font-specification:Sans Bold">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="416.45505"
+       y="587.60535"
+       id="text7170-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7172-0"
+         x="416.45505"
+         y="587.60535"
+         style="font-weight:bold;fill:#f57900;-inkscape-font-specification:Sans Bold">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="488.3923"
+       y="615.90918"
+       id="text7174-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mat/matitai/facultad/mva/bach_PGM_ProbabilisticGraphicalModels/pract/2_classification_data_HWK2/inf/pics/dagSimple.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7176-1"
+         x="488.3923"
+         y="615.90918"
+         style="font-weight:bold;fill:#ad7fa8;-inkscape-font-specification:Sans Bold">B</tspan></text>
+  </g>
+</svg>
