@@ -1,13 +1,24 @@
-close all
-clear all
-home
+function finalMu = pgm_kMeans(x, c, opt)
+% -------------------------------------------------------------------------
+% function mu = pgm_kMeans(x, c)
+% -------------------------------------------------------------------------
+% inputs: 
+%       - x:   data dxN to be classified. d is the dimension, and N the
+%              number of sampels
+%       - c:   number of clusters to use
+%       - opt: struct with options
+% outputs:
+%       - finalMu: matrix of dimensions dxc with the final position of the
+%                  means of each cluster
+% -------------------------------------------------------------------------
 
 %% Data and initialization
 
-x     = load('../data/EMGaussian.data'); x = x';
-[d,N] = size(x);
+if nargin<3
+    opt.plot = 0;
+end
 
-c         = 4;          % Number of clusters
+[d,N] = size(x);
 mu(:,:,1) = randn(d,c); % Randomly initialized means
 
 t = 1;
@@ -32,13 +43,17 @@ while J > 0 && t < 1000
     t = t+1;
 end
 
-%% Plots
-colors = pgm_colors();
-lut    = [1 5 3 10];
-figure
-	hold on; grid on;
-	for i=1:c
-		plot(x(1,l==i),x(2,l==i),'.','color',colors{lut(i)}, 'markersize',15)
-		plot(squeeze(mu(1,i,:)),squeeze(mu(2,i,:)),'-^', 'color', 'k', 'MarkerEdgeColor', 'k', 'MarkerFaceColor',colors{lut(i)}, 'markersize', 10, 'linewidth', 2)
-	end
-axis tight
+%% Plot
+if opt.plot >= 1
+    colors = pgm_colors();
+    lut    = [1 5 3 10];
+    figure
+        hold on; grid on;
+        for i=1:c
+            plot(x(1,l==i),x(2,l==i),'.','color',colors{lut(i)}, 'markersize',15)
+            plot(squeeze(mu(1,i,:)),squeeze(mu(2,i,:)),'-^', 'color', 'k', 'MarkerEdgeColor', 'k', 'MarkerFaceColor',colors{lut(i)}, 'markersize', 10, 'linewidth', 2)
+        end
+    axis tight
+end
+
+finalMu = mu(:,:,end);
