@@ -11,7 +11,7 @@ x       = load('../data/EMGaussian.data'); x = x';
 c       = 4; % Number of clusters
 
 mu      = pgm_kMeans(x, c, opt)';
-
+%mu=ones(4,2);
 t       = 1;
 epsilon = 1e-07;
 Pi      = (1/4)*ones(c,1);
