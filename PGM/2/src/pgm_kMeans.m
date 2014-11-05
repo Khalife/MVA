@@ -50,8 +50,8 @@ if opt.plot >= 1
     figure
         hold on; grid on;
         for i=1:c
-            plot(x(1,l==i),x(2,l==i),'.','color',colors{lut(i)}, 'markersize',15)
-            plot(squeeze(mu(1,i,:)),squeeze(mu(2,i,:)),'-^', 'color', 'k', 'MarkerEdgeColor', 'k', 'MarkerFaceColor',colors{lut(i)}, 'markersize', 10, 'linewidth', 2)
+            plot(x(1,l==i),x(2,l==i),'+','color',colors{lut(i)}, 'markersize',5)
+            plot(squeeze(mu(1,i,:)),squeeze(mu(2,i,:)),'-^', 'color', 'k', 'MarkerEdgeColor', 'k', 'MarkerFaceColor',colors{lut(i)}, 'markersize', 8, 'linewidth', 1)
         end
     axis tight
 end

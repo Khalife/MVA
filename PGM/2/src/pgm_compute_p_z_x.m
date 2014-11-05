@@ -1,4 +1,4 @@
-function p_z_x=compute_p_z_x(x,Pi,mu,SIGMA)
+function p_z_x=pgm_compute_p_z_x(x,Pi,mu,SIGMA)
 % -------------------------------------------------------------------------
 % function p_z_x=compute_p_z_x(x,Pi,mu,SIGMA)
 % -------------------------------------------------------------------------

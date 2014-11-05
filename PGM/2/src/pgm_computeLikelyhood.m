@@ -1,4 +1,4 @@
-function l=computeLikelyhood(p_z_x,x,Pi,mu,SIGMA)
+function l=pgm_computeLikelyhood(p_z_x,x,Pi,mu,SIGMA)
 
 l=0;
 for i=1:size(x,1)
