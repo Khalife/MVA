@@ -77,7 +77,11 @@ Finally, $$\boxed{\mathcal{L}(G) = \mathcal{L}(G^\prime)}$$
 %TODO: doubt. (n-1) inside the prod?
 
 \subsection*{b.}
-
+First we know that for any directed graph $G$, and its symmetrized graphed $G'$, we always have $L(G)\subset L(G')$. Then, we just have to discuss the case $L(G') \subset  L(G)$.
+For a 2 nodes-graph, if there is an edge. we always have for p $\in L(G'), p(x)=p(x2|x1)p(x1)$, this corresponds to a trival directed graph. If there is no edge, then the directed graph with no edge corresponds to the same factorization of p.~\\
+For a 3 nodes-graph, let's consider a
+The answer is a 4 node-graph.
+Indeed, for a 2 node graph, we always have, for any 
 \section*{2 d-separation}
 \subsection*{a.}
 Let us denote $\mathbf{G_M}=(E, V_{M})$ the moral graph of $\mathbf{G}$, and let us suppose that S separates A and B in $\mathbf{G_M}$.~\\
@@ -121,7 +125,7 @@ Given the graph shown in Figure \ref{fig:ex2c}, we consider the following statem
 First we can see that $A=\{1,2\}$ and $B=\{4\}$ are d-separated by $C=\{3\}$. Indeed the chains going from A to B are exactly $(1,8,4)$ and $(2,8,4)$. Given that $\{8\}$ is a v-structure which is not in C, and C contains no descendants of $\{8\}$, these chains are locked in $\{8\}$, the statement 1 is true thanks to the Global Markov property.~\\
 ~\\
 2-FALSE.
-We can see that $A=\{1,2\}$ and $B=\{4\}$ are not d-separated by $C=\{5\}$. We do the same reasoning as in the first case (with the same chain), which gives that the statement is false.~\\
+We can see that $A=\{1,2\}$ and $B=\{4\}$ are not d-separated by $C=\{5\}$, since the only chain going from A to B contains $\{7\}$ which is not a V-structure, and is not in C.~\\
 ~\\
 3-TRUE.~\\
 We show that $A=\{1\}$ and $B=\{6\}$ are d-separated by $C=\{2,4,7\}$. Indeed, the only chain going from A to B is $\{1,8,7,6\}$, and this chain is blocked in 7 since $7\in C$ and $\{8, 7, 6\}$ is not a v-structure. Given $p\in L(G)$, it verifies the Global Markov property, i.e $X_{A} \bot X_{B} | X_{C}$. The statement is true.~\\
@@ -135,12 +139,19 @@ We show that $A=\{1\}$ and $B=\{6\}$ are d-separated by $C=\{2,4,7\}$. Indeed, t
 	\label{fig:3a}
 \end{figure}
 ~\\
-The distorsion of the clustering is invariant to the random initialization of the means, and equal to  3.2406e+03.
-\subsection*{a.}
+The distorsion of the clustering is invariant to the random initialization of the means, and equal to  3.2406e+03.~\\
+
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=.8\textwidth]{./pics/3b.pdf}
 	\caption{Expectation maximization: 90\% mass of the Gaussian}
 	\label{fig:3b}
 \end{figure}
+\subsection*{b.}
+Under the assumption that $\Sigma_{j} = \sigma Id$, the $\Sigma$ term in the log-likelyhood is just ~\\
+$N log(\frac{1}{\sigma^{K}})-\frac{1}{2\sigma^{2}} \sum \limits_{i=1}^N ||x_{i}-\mu_{j}||^{2}$, then maximizing with respect to $\sigma$ yields :~\\
+$\sigma=\sqrt{\frac{1}{2KN}\sum \limits_{i,j} ||x_{i}-\mu_{j}||^2}$~\\
+For the other parameters $\Pi$ and $\mu$, the updating formulas are the same as in the general case for $\Sigma$
+\subsection*{c}
+In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm.
 \end{document}
