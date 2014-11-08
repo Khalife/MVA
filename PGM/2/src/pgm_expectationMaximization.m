@@ -17,7 +17,7 @@ if opt.log>=1
     fprintf('\tDone!\n');
 end
 t        = 1;
-epsilon  = 1e-07;
+epsilon  = 1e-03;
 Pi       = (1/c)*ones(c,1);
 SIGMA    = zeros(d,d,c);
 
@@ -35,10 +35,10 @@ counter  = 1;
 while (lDiff > epsilon)
     % Given theta, with bayes formula compute p(z|x)=q* (partial maximisation)
     p_z_x = pgm_compute_p_z_x(x,Pi,mu,SIGMA);   
-    l_new = pgm_computeLikelyhood(p_z_x,x,Pi,mu,SIGMA);
+    l_new = pgm_computeLikelyhood(p_z_x,x,Pi,mu,SIGMA)
     lDiff = abs(l-l_new);
     % Closed formula for updating the theta variables given p(z|x)
-    Pi    = sum(p_z_x)/N;    
+    Pi    = sum(p_z_x)/N;  
     % Mean actualization
     for j=1:c
         mu(j,:) = sum(repmat(p_z_x(:,j),1,2).*x')./sum(p_z_x(:,j));
