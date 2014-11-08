@@ -4,9 +4,11 @@ home
 
 %% Data and initialization
 opt.plot = 1;
-opt.log  = 1;
+opt.log  = 2;
 
-x        = load('../data/EMGaussian.data'); x = x';
+path     = '../data/EMGaussian.data';
+% path     = '../data/EMGaussian.test';
+x        = load(path); x = x';
 [d,N]    = size(x);
 c        = 4; % Number of clusters
 if opt.log>=1
@@ -22,10 +24,13 @@ Pi       = (1/c)*ones(c,1);
 SIGMA    = zeros(d,d,c);
 
 for j=1:c
-    SIGMA(:,:,j)=eye(d);
+    SIGMA(:,:,j)=rand(1)*eye(d);
 end
 
 %% Expectation maximization
+
+ISOTROPIC = 0;
+
 if opt.log>=1
     fprintf('Running Expectation Maximization algorithm...\n');
 end
@@ -44,13 +49,26 @@ while (lDiff > epsilon)
         mu(j,:) = sum(repmat(p_z_x(:,j),1,2).*x')./sum(p_z_x(:,j));
     end
     % Sigma actualization
-    for j=1:c
-        SIGMA(:,:,j)=zeros(d,d);
-        for i=1:N
-            SIGMA(:,:,j) = SIGMA(:,:,j) + (p_z_x(i,j))*(x(:,i)'-mu(j,:))'*(x(:,i)'-mu(j,:));
+    if ISOTROPIC
+        for j=1:c
+            SIGMA(:,:,j)=zeros(d,d);
+            for i=1:N
+                for k=1:c
+                    SIGMA(:,:,j) = SIGMA(:,:,j) + eye(d)*norm(x(:,i)-mu(k,:)')^2;
+                end
+            end
+            SIGMA(:,:,j) = sqrt(1/2/N/c*SIGMA(:,:,j));
         end
-        SIGMA(:,:,j) = SIGMA(:,:,j)./sum(p_z_x(:,j));
+    else
+        for j=1:c
+            SIGMA(:,:,j)=zeros(d,d);
+            for i=1:N
+                SIGMA(:,:,j) = SIGMA(:,:,j) + (p_z_x(i,j))*(x(:,i)'-mu(j,:))'*(x(:,i)'-mu(j,:));
+            end
+            SIGMA(:,:,j) = SIGMA(:,:,j)./sum(p_z_x(:,j));
+        end
     end
+    
     if opt.log>=2
         fprintf('Iteration %d:\tliklyhood %0.4f\n', counter, l_new);
     end
@@ -60,6 +78,9 @@ end
 if opt.log>=1
     fprintf('\tDone!\n');
 end
+
+% Latent variables
+[~,z] = max(p_z_x,[],2);
 
 %% Plot
 
@@ -100,15 +121,19 @@ if opt.plot>=2
 end
 if opt.plot>=1
     figure;
-    plot(x(1,:),x(2,:),'+','markersize',5)
     hold on
     grid on
-for i=1:c
-    [xEllip, yEllip] = pgm_computeEllipse(mu(i,:),SIGMA(:,:,i),0.9);
-    plot(xEllip, yEllip,'color',colors{lut(i)},'linewidth',2)
+    for i=1:N
+        plot(x(1,i),x(2,i),'+','markersize',5,'color',colors{lut(z(i))})
+    end
+    for i=1:c
+        [xEllip, yEllip] = pgm_computeEllipse(mu(i,:),SIGMA(:,:,i),0.9);
+        plot(xEllip, yEllip,'color',colors{lut(i)},'linewidth',2)
+        plot(mu(i,1),mu(i,2),'-^', 'color', 'k', 'MarkerEdgeColor', 'k', 'MarkerFaceColor',colors{lut(i)}, 'markersize', 8, 'linewidth', 2)
+    end
+    axis equal
     axis tight
     title('\fontsize{14}90% of the mass of the Gaussian')
-end
 end
 
 if opt.log>=1
