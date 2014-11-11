@@ -67,9 +67,21 @@ By going back in the equalities, we actually have $L(G^{'}) \subset L(G)$.
 Hence, $L(G)=L(G^{'})$.
 ~\\
 ~\\
-- As $G$ is a directed tree, it's also a \emph{graph}, so $p(x)$ factorizes in $G$:
-$$p(x) = \prod^n_{i=1}p(x_i|x_{\pi_i})$$
-As $G$ is a directed tree with no \emph{v-structures}, it has the same quantity of \emph{edges} as \emph{clicks}: $n-1$. Furthermore each click has two elements, i.e. sets parent-children. Dividing and multiplying the previous expression by $n-1$, and defining $\psi_{c}(x_{c}) = (n-1)^{\frac{1}{n}}f(x_c,x_{\pi_c})$ (without ambiguity because there is only one node having no parents in the clique) and $Z=n-1$ (the number of clicks), we obtain:
+- As $G$ is a directed tree, it's also a \emph{graph}. Let us denote the root node without parents $x_{n}$. ~\\
+p factorizes in $L(G)$:
+$$p(x) = \prod^n_{i=1}p(x_i|x_{\pi_i}) = [\: \prod^{n-1}_{i=1}p(x_i|x_{\pi_i}) \: ] \:p(x_{n})$$
+As $G$ is a directed tree with no \emph{v-structures}, it has the same quantity of \emph{edges} as \emph{clicks}: $n-1$. Furthermore each click has two elements, i.e. sets parent-children.~\\
+~\\
+Then we can define for the sons in the (n-2) cliques that do not contain the root : $$\psi_{c}(x_{c}) = \underbrace{(n-1)^{\frac{1}{n-1}}p(x_c|x_{\pi_c})}_{\text{Depending only on the elements of the clique}}$$~\\
+and for the clique containing the root : 
+%$\psi_{c}(x_{c})=\begin{cases} 
+%(n-1)^{\frac{1}{n-1}}p(x_{n}|x_{\pi_{n}}) & \text{if  }  x_{c}=x_{n} \\
+%p(x_{n}) & \text{otherwise } 
+%\end{cases}$
+$\psi_{c}(x_{c})=\underbrace{(n-1)^{\frac{1}{n-1}}p(x_{n}|x_{\pi_{n}})p(x_{n})}_{\text{Depending only on the elements of the clique}}$
+~\\
+
+With $Z=n-1$ (the number of cliques), we obtain:
 $$p(x) = \frac{1}{Z}\prod_{c\in \mathcal{C}}\psi_c(x_c)$$
 where $\mathcal{C}$ is the set of clicks of $G$. This expression corresponds to a factorization in the symetrized graph $G^\prime$ of $G$, which has $Z=n-1$ clicks of cardinal $2$, $\{x_k, x_{\pi_k}\}$, proving: $\mathcal{L}(G)\subseteq \mathcal{L}(G^\prime)$.
 ~\\
