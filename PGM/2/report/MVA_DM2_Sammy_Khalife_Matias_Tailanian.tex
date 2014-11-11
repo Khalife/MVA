@@ -79,11 +79,31 @@ Finally, $$\boxed{\mathcal{L}(G) = \mathcal{L}(G^\prime)}$$
 %TODO: doubt. (n-1) inside the prod?
 
 \subsection*{b.}
-First we know that for any directed graph $G$, and its symmetrized graphed $G'$, we always have $L(G)\subset L(G')$. Then, we just have to discuss the case $L(G') \subset  L(G)$.
-For a 2 nodes-graph, if there is an edge. we always have for p $\in L(G'), p(x)=p(x2|x1)p(x1)$, this corresponds to a trival directed graph. If there is no edge, then the directed graph with no edge corresponds to the same factorization of p.~\\
-For a 3 nodes-graph, let's consider a
-The answer is a 4 node-graph.
-Indeed, for a 2 node graph, we always have, for any 
+First we know that for any directed graph $G$, and its symmetrized graphed $G'$, we always have $L(G)\subset L(G')$.~\\
+Then, we just have to discuss the case $L(G') \subset  L(G)$.~\\
+~\\
+For a 2 nodes-graph, if there is an edge. we always have for p $\in L(G'), p(x)=p(x2|x1)p(x1)$, this corresponds to a trival directed graph. If there is no edge, then the directed graph with no edge corresponds to the same factorization of p in the symmetrized graph.~\\
+~\\
+For a 3 nodes-graph :~\\
+- No-edges graph : all the nodes are independant, then the factorization is the same in the directed graph with no no edges.~\\
+- One-edge graph : there is only one clique containing more than one node (2 nodes)  in the undirected graph, with a factorization :~\\
+$$p(x) = [\prod^n \limits_{\substack{i=1 \\ i \neq i_{0} i \neq {i_{1}} } }\psi_{i}(x_i)] \: \psi_{i_{0},i_{1}}(x_{i_{0}},x_{i_{1}})$$
+This corresponds to a factorization in a directed graph with the same edge oriented in any direction.~\\
+- 2 edges-graph : Then, the graph is an undirected tree with no v-structures, and we use the result of 1.b to have $L(G)=L(G')$.~\\
+~\\
+Let's consider a 4 nodes graph like the following :~\\
+% figure of counter exemple
+
+%$$p(x)=\psi_{1}(x_{1},x_{2})\psi_{2}(x_{2}, x_{3}) \psi_{3}(x_{3}, x_{4})\psi_{4}(x_{4}, x_{1})$$
+
+~\\
+A directed graph should have the same edges, otherwise some independances would be erased or added (intuitive statement).
+Moreover, there must be a v-structure, otherwise the directed graph would be cyclic and not be a DAG. Let's suppose this v-structure is on the node 1.
+Then, 2 is not independant of 4 given (1,3) since there is a v-structure in (1,3), whereas in the symmetrized graph, 2 is independant of 4 given (1,3).  
+This shows that p is in L(G) but not in L(G').~\\
+The smallest undirected graph G' such that there is no directed graph G with L(G')=L(G) contains 4 nodes.
+
+
 \section*{2 d-separation}
 \subsection*{a.}
 Let us denote $\mathbf{G_M}=(E, V_{M})$ the moral graph of $\mathbf{G}$, and let us suppose that S separates A and B in $\mathbf{G_M}$.~\\
@@ -106,7 +126,7 @@ This property of transitivity for d-separation is false. 2 counterexamples are s
   \caption{Counterexamples}
   \label{fig:ex2_dags}
 \end{figure}
-\newpage
+
 \subsection*{c.}
 \begin{wrapfigure}{r}{0.4\textwidth}
 	\vspace{-20pt}
@@ -186,6 +206,9 @@ For the other parameters $\Pi$ and $\mu$, the updating formulas are the same as 
 
 \subsection*{c}
 In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm.
+<<<<<<< HEAD
+Values of the log-likelyhood
+=======
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=.8\textwidth]{./pics/3c.pdf}
@@ -221,4 +244,5 @@ In the case of general form matrix $\Sigma$, we have the classical updating form
 	\label{tab:Likelihood}
 \end{table}
 
+>>>>>>> e9d7db917d331d85d092af225cf3a257f37b7431
 \end{document}
