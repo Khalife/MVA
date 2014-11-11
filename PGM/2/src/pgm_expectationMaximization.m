@@ -34,7 +34,7 @@ SIGMA    = zeros(d,d,c);
 for j=1:c
     SIGMA(:,:,j)=rand(1)*eye(d);
 end
-break
+
 %% Expectation maximization
 
 ISOTROPIC = 0;
