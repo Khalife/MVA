@@ -20,7 +20,7 @@ if nargin<3
 end
 
 [d,N] = size(x);
-mu(:,:,1) = 10*randn(d,c); % Randomly initialized means
+mu(:,:,1) = randn(d,c); % Randomly initialized means
 
 t = 1;
 J = 1;
