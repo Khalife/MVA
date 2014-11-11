@@ -72,7 +72,7 @@ p factorizes in $L(G)$:
 $$p(x) = \prod^n_{i=1}p(x_i|x_{\pi_i}) = [\: \prod^{n-1}_{i=1}p(x_i|x_{\pi_i}) \: ] \:p(x_{n})$$
 As $G$ is a directed tree with no \emph{v-structures}, it has the same quantity of \emph{edges} as \emph{clicks}: $n-1$. Furthermore each click has two elements, i.e. sets parent-children.~\\
 ~\\
-Then we can define for the sons in the (n-2) cliques that do not contain the root : $$\psi_{c}(x_{c}) = \underbrace{(n-1)^{\frac{1}{n-1}}p(x_c|x_{\pi_c})}_{\text{Depending only on the elements of the clique}}$$~\\
+Then we can define for the sons in the (n-2) clicks that do not contain the root : $$\psi_{c}(x_{c}) = \underbrace{(n-1)^{\frac{1}{n-1}}p(x_c|x_{\pi_c})}_{\text{Depending only on the elements of the clique}}$$~\\
 and for the clique containing the root : 
 %$\psi_{c}(x_{c})=\begin{cases} 
 %(n-1)^{\frac{1}{n-1}}p(x_{n}|x_{\pi_{n}}) & \text{if  }  x_{c}=x_{n} \\
@@ -140,11 +140,12 @@ This property of transitivity for d-separation is false. 2 counterexamples are s
 \begin{figure} [h!]
 \centering
   \subfloat[Simple DAG : T separates A and S but contains a v-structure in a chain going from A to B]{\label{fig:dagSimple} 
-  		\includegraphics[width=.4\textwidth]{./pics/dagSimple.png}} \hfill 
+  		\includegraphics[width=.35\textwidth]{./pics/dagSimple.png}} \hspace{30pt}
   \subfloat[Complex DAG]{\label{fig:dagComplex} 
-  		\includegraphics[width=.5\textwidth]{./pics/dagComplex.png}} \\
+  		\includegraphics[width=.4\textwidth]{./pics/dagComplex.png}} \\
   \caption{Counterexamples}
   \label{fig:ex2_dags}
+  \vspace{-20pt}
 \end{figure}
 
 \subsection*{c.}
@@ -156,6 +157,7 @@ This property of transitivity for d-separation is false. 2 counterexamples are s
 	\vspace{-20pt}
 	\caption{Graph $G$}
 	\label{fig:ex2c}
+	\vspace{-30pt}
 \end{wrapfigure}
 Given the graph shown in Figure \ref{fig:ex2c}, we consider the following statements:
 \begin{enumerate}
@@ -187,7 +189,7 @@ In Figure \ref{fig:3a_km} is shown the behavior of the K-Means algorithm for two
 
 Defining as a distortion measure $D$:
 $$ D = \sum\limits_{i=1}^{N}\sum\limits_{j=1}^{c}k_j^i||x_i-\mu_j||_2 $$
-where $k_j^i$ takes value 1 for $j$ corresponding to the assigned class of the sample $i$ and 0 otherwise, we can compute a measure that gives an idea of how well the algorithm performed. As can be seen in table \ref{tab:kmeansdistortion}, for different realizations (random initializations) the value of $D$ remains almost unchanged, which means that no matter where the algorithm is initialized, the result after some iterations is almost the same, leading to a robust algorithm.
+where $k_j^i$ takes value 1 for $j$ corresponding to the assigned class of the sample $i$ and 0 otherwise, we can compute a measure that gives an idea of how well the algorithm performed. As can be seen in table \ref{tab:kmeansdistortion}, for different realizations (random initializations) the value of $D$ remains almost unchanged, which means that no matter where the algorithm is initialized, the result after some iterations is almost the same, leading to a robust algorithm. The slight differences of the final values for the distortion can be explained by possible local minimas reached, since the problem is not convex.
 \begin{table}[h!]
 \centering
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
@@ -250,15 +252,13 @@ The cumulative function of the Gaussian is $$F(r) = 1-e^{-r^2/2}$$ So given the 
 	r= F^{-1}(p)=\sqrt{-2\ln (1-p)}
 	\label{ec:r}
 \end{equation}
-
+Then, the generalize quantile parameter $r$ is given by this formula to have a probability $p$ that a point falls in the resulting $\theta$ parametrized ellipse.
 \subsection*{c}
-In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm.\\
-
-In Figure \ref{fig:3d} are shown the results for this case. As in the previous part the color of the samples represent the hidden variables, the triangles are the means and the solid line the ellipse which includes the 90\% of the mass of the Gaussian, in this case recalling the general case described in the previous section and following the equations \ref{ec:par1} and \ref{ec:r}.
+In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm. In Figure \ref{fig:3d} are shown the results for this case. As in the previous part the color of the samples represent the hidden variables, the triangles are the means and the solid line the ellipse which includes the 90\% of the mass of the Gaussian, in this case recalling the general case described in the previous section and following the equations \ref{ec:par1} and \ref{ec:r}.
 
 \begin{figure}[h!]
 	\centering 
-	\includegraphics[width=.8\textwidth]{./pics/3c.pdf}
+	\includegraphics[width=.7\textwidth]{./pics/3c.pdf}
 	\caption{Expectation maximization in the general case: 90\% mass of the Gaussian}
 	\label{fig:3c}
 \end{figure}
@@ -270,7 +270,7 @@ The results over the test dataset are shown in Figure \ref{fig:3d}. Figure \ref{
   \subfloat[Diagonal $\Sigma$]{\label{fig:3bTest} 
   		\includegraphics[width=.4\textwidth]{./pics/3bTest.pdf}} \hspace{20pt}
   \subfloat[General form $\Sigma$]{\label{fig:3cTest} 
-  		\includegraphics[width=.4\textwidth]{./pics/3cTest.pdf}} \\
+  		\includegraphics[width=.35\textwidth]{./pics/3cTest.pdf}} \\
   \caption{Results on test data} 
   \label{fig:3d}
 \end{figure}
