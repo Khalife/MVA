@@ -3,8 +3,8 @@ clear all
 home
 
 %% Data and initialization
-opt.plot = 1;
-opt.log  = 2;
+opt.plot = 2;
+opt.log  = 1;
 
 path     = '../data/EMGaussian.data';
 % path     = '../data/EMGaussian.test';
@@ -14,8 +14,16 @@ c        = 4; % Number of clusters
 if opt.log>=1
     fprintf('Running K-Means...\n');
 end
-mu       = pgm_kMeans(x, c, opt)';
+[mu, l]  = pgm_kMeans(x, c, opt); mu=mu';
+
+% Distortion measure for kMeans
+kMeansDistortion = 0;
+for i=1:N
+    kMeansDistortion = kMeansDistortion + norm(x(:,i)-mu(l(i),:)');
+end
+
 if opt.log>=1
+    fprintf('\tDistortion measure: %0.2f\n',kMeansDistortion);
     fprintf('\tDone!\n');
 end
 t        = 1;
@@ -26,7 +34,7 @@ SIGMA    = zeros(d,d,c);
 for j=1:c
     SIGMA(:,:,j)=rand(1)*eye(d);
 end
-
+break
 %% Expectation maximization
 
 ISOTROPIC = 0;
@@ -81,6 +89,8 @@ end
 
 % Latent variables
 [~,z] = max(p_z_x,[],2);
+
+% Distortion Measure
 
 %% Plot
 
