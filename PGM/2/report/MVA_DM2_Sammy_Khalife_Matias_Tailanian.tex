@@ -10,22 +10,24 @@
 
 \usepackage{amsfonts}
 \usepackage{fancyhdr}
-\usepackage{array,multirow,makecell}
+\usepackage{array,multirow}
+% \usepackage{array,multirow,makecell}
 \usepackage{amsmath}
 
 \usepackage{cancel}
 \usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage[table]{xcolor}
+\usepackage{multirow}
 
 \newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
 \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
 
-\setcellgapes{1pt}
-\makegapedcells
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
-\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+% \setcellgapes{1pt}
+% \makegapedcells
+% \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+% \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+% \newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{1pt}
@@ -132,14 +134,43 @@ We show that $A=\{1\}$ and $B=\{6\}$ are d-separated by $C=\{2,4,7\}$. Indeed, t
 
 \section*{Implementation - Gaussian Mixtures}
 \subsection*{a.}
-\begin{figure}[h!]
-	\centering 
-	\includegraphics[width=.8\textwidth]{./pics/3a.pdf}
-	\caption{K-Means algorithm output}
-	\label{fig:3a}
+In Figure \ref{fig:3a_km} is shown the behavior of the K-Means algorithm for two different random initializations. In different colors are represented the different clusters found. The triangles shows the evolution of the mean of each cluster. The algorithm was ran several times and in all cases reached satisfactory results, resulting in very similar values for $\mu_i$ at the end. Furthermore, the distortion of the clustering is invariant to the random initialization of the means.
+\begin{figure} [h!]
+\centering
+  \subfloat[Random initialization 1]{\label{fig:3a} 
+  		\includegraphics[width=.48\textwidth]{./pics/3a.pdf}} 
+  \subfloat[Random initialization 2]{\label{fig:3a2} 
+  		\includegraphics[width=.48\textwidth]{./pics/3a2.pdf}} \\
+  \caption{K-Means algorithm. In different colors are shown the different clusters found at the end of the algorithm. Also, with triangles is shown the evolution of the mean of each cluster, with corresponding color.} 
+  \label{fig:3a_km}
 \end{figure}
-~\\
-The distorsion of the clustering is invariant to the random initialization of the means, and equal to  3.2406e+03.~\\
+
+Defining as a distortion measure $D$:
+$$ D = \sum\limits_{i=1}^{N}\sum\limits_{j=1}^{c}k_j^i||x_i-\mu_j||_2 $$
+where $k_j^i$ takes value 1 for $j$ corresponding to the assigned class of the sample $i$ and 0 otherwise, we can compute a measure that gives an idea of how well the algorithm performed. As can be seen in table \ref{tab:kmeansdistortion}, for different realizations (random initializations) the value of $D$ remains almost unchanged, which means that no matter where the algorithm is initialized, the result after some iterations is almost the same, leading to a robust algorithm.
+\begin{table}[h!]
+\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
+	\hline
+	\cellcolor[gray]{0.7} 1 & \cellcolor[gray]{0.7} 2 & \cellcolor[gray]{0.7} 3 & \cellcolor[gray]{0.7} 4 & \cellcolor[gray]{0.7} 5 & \cellcolor[gray]{0.7} 6 & \cellcolor[gray]{0.7} 7 & \cellcolor[gray]{0.7} 8 & \cellcolor[gray]{0.7} 9 & \cellcolor[gray]{0.7} 10 \\ \hline
+	1108.46 & 1108.46 & 1103.50 & 1102.55 & 1109.42 & 1109.42 & 1109.42 & 1103.92 & 1102.85 & 1109.42\\ \hline
+	\end{tabular} 
+	\caption{Distortion measure for k-Means}
+	\label{tab:kmeansdistortion}
+\end{table}
+
+In the other hand, in Figure \ref{fig:3aLejos_km} are shown results of the k-Means algorithm not so satisfactory. In this case the initialization of the means was made far away from the data on purpose, to analyze the behavior of the algorithm. As can be seen, with random initializations far away from data the algorithm not always finds a proper solution, as can be seen in Figure \ref{fig:3aLejos2}.
+\begin{figure} [h!]
+\centering
+  \subfloat[Far random initialization 1]{\label{fig:3aLejos} 
+  		\includegraphics[width=.48\textwidth]{./pics/3aLejos.pdf}} 
+  \subfloat[Far random initialization 2]{\label{fig:3aLejos2} 
+  		\includegraphics[width=.48\textwidth]{./pics/3aLejos2.pdf}} \\
+  \caption{K-Means algorithm with random initialization far away from data. In different colors are shown the different clusters found at the end of the algorithm. Also, with triangles is shown the evolution of the mean of each cluster, with corresponding color.} 
+  \label{fig:3aLejos_km}
+\end{figure}
+
+The distortion for the result shown in Figure \ref{fig:3aLejos} is 1109.42, and the distortion for the result shown in Figure \ref{fig:3aLejos2} is 1837.15. For the example in Figure \ref{fig:3aLejos} the results are as good as initializing the means close to the data, and distortion comparable to the ones shown in table \ref{tab:kmeansdistortion}.
 
 \subsection*{b.}
 Under the assumption that $\Sigma_{j} = \sigma Id$, the $\Sigma$ term in the log-likelyhood is just ~\\
