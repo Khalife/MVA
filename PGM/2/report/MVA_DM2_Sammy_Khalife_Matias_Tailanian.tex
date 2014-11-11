@@ -166,9 +166,9 @@ In Figure \ref{fig:3a_km} is shown the behavior of the K-Means algorithm for two
 \begin{figure} [h!]
 \centering
   \subfloat[Random initialization 1]{\label{fig:3a} 
-  		\includegraphics[width=.48\textwidth]{./pics/3a.pdf}} 
+  		\includegraphics[width=.5\textwidth]{./pics/3a.pdf}} 
   \subfloat[Random initialization 2]{\label{fig:3a2} 
-  		\includegraphics[width=.48\textwidth]{./pics/3a2.pdf}} \\
+  		\includegraphics[width=.5\textwidth]{./pics/3a2.pdf}} \\
   \caption{K-Means algorithm. In different colors are shown the different clusters found at the end of the algorithm. Also, with triangles is shown the evolution of the mean of each cluster, with corresponding color.} 
   \label{fig:3a_km}
 \end{figure}
@@ -191,49 +191,81 @@ In the other hand, in Figure \ref{fig:3aLejos_km} are shown results of the k-Mea
 \begin{figure} [h!]
 \centering
   \subfloat[Far random initialization 1]{\label{fig:3aLejos} 
-  		\includegraphics[width=.48\textwidth]{./pics/3aLejos.pdf}} 
+  		\includegraphics[width=.5\textwidth]{./pics/3aLejos.pdf}} 
   \subfloat[Far random initialization 2]{\label{fig:3aLejos2} 
-  		\includegraphics[width=.48\textwidth]{./pics/3aLejos2.pdf}} \\
+  		\includegraphics[width=.5\textwidth]{./pics/3aLejos2.pdf}} \\
   \caption{K-Means algorithm with random initialization far away from data. In different colors are shown the different clusters found at the end of the algorithm. Also, with triangles is shown the evolution of the mean of each cluster, with corresponding color.} 
   \label{fig:3aLejos_km}
+  \vspace{10pt}
 \end{figure}
 
 The distortion for the result shown in Figure \ref{fig:3aLejos} is 1109.42, and the distortion for the result shown in Figure \ref{fig:3aLejos2} is 1837.15. For the example in Figure \ref{fig:3aLejos} the results are as good as initializing the means close to the data, and distortion comparable to the ones shown in table \ref{tab:kmeansdistortion}.
 
 \subsection*{b.}
-Under the assumption that $\Sigma_{j} = \sigma Id$, the $\Sigma$ term in the log-likelyhood is just ~\\
-$N log(\frac{1}{\sigma^{K}})-\frac{1}{2\sigma^{2}} \sum \limits_{i=1}^N ||x_{i}-\mu_{j}||^{2}$, then maximizing with respect to $\sigma$ yields :~\\
-$\sigma=\sqrt{\frac{1}{2KN}\sum \limits_{i,j} ||x_{i}-\mu_{j}||^2}$~\\
-For the other parameters $\Pi$ and $\mu$, the updating formulas are the same as in the general case for $\Sigma$
+In the Isotropic case, under the assumption that $\Sigma_{j} = \sigma Id$, the $\Sigma$ term in the log-likelyhood is just $N \log(\frac{1}{\sigma^{K}})-\frac{1}{2\sigma^{2}} \sum \limits_{i=1}^N ||x_{i}-\mu_{j}||^{2}$. Then maximizing with respect to $\sigma$ yields:
+$$\sigma=\sqrt{\frac{1}{2KN}\sum \limits_{i,j} ||x_{i}-\mu_{j}||^2}$$
+For the other parameters $\Pi$ and $\mu$, the updating formulas are the same as in the general case for $\Sigma$.\\
+
+In Figure \ref{fig:3b} is shown the results for the Isotropic case. In different colors are shown the different clusters found. The triangles represent the means finally obtained, the colors of the samples represent the hidden variables, and in solid line an ellipse that contains the 90\% of the mass of each Gaussian. 
 \begin{figure}[h!]
 	\centering 
-	\includegraphics[width=.8\textwidth]{./pics/3b.pdf}
+	\includegraphics[width=.7\textwidth]{./pics/3b.pdf}
 	\caption{Expectation maximization: 90\% mass of the Gaussian}
 	\label{fig:3b}
 \end{figure}
+To compute this ellipse, in the general case we consider the joint probability of the Gaussian:
+$$ p(x,y) = \frac{1}{2\pi \sqrt{|\Sigma|}}\exp \left(-\frac{1}{2}(z-\mu)\Sigma^{-1}(z-\mu)^T\right)$$
+The directions of the two axis of the ellipse are given by the eigenvectors of $\Sigma$, while the extent of the great and small radius are $r\sqrt{\lambda_1}$ and $r\sqrt{\lambda_2}$ respectively, being $\lambda_1$ the greatest eigenvalue and $\lambda_2$ the smallest, and $r$ defined as: $$r^2=(z-\mu)\Sigma^{-1}(z-\mu)^T$$
+$\Sigma$ is assumed to be symmetric and positive definite, so the most general form of the matrix is:
+$$\Sigma = \left[
+\begin{array}{cc}
+\sigma_1^2 & \rho\sigma_1\sigma_2 \\ 
+\rho\sigma_1\sigma_2 & \sigma_2^2
+\end{array} 
+\right]$$
+The ellipse can be parametrized as:
+\begin{align}
+\label{ec:par1}x & = r\sigma_1 \cos(\theta) +\mu_1 \\
+\nonumber y & = r\sigma_2 (\rho \cos(\theta)+\sqrt{1-\rho^2}\sin(\theta) )+\mu_2
+\end{align}
+For the isotropic case, where $\rho=0$, the parametrization will be:
+\begin{align}
+\nonumber x & = r\sigma_1 \cos(\theta) +\mu_1 \\
+\nonumber y & = r\sigma_2 \sin(\theta) +\mu_2
+\end{align}
+The cumulative function of the Gaussian is $$F(r) = 1-e^{-r^2/2}$$ So given the desired probability $p$ of a point to fall at a certain distance $r$ from the Gaussian, $r$ can be computed as 
+\begin{equation}
+	r= F^{-1}(p)=\sqrt{-2\ln (1-p)}
+	\label{ec:r}
+\end{equation}
 
 \subsection*{c}
-In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm.
+In the case of general form matrix $\Sigma$, we have the classical updating formulas for the EM algorithm.\\
+
+In Figure \ref{fig:3d} are shown the results for this case. As in the previous part the color of the samples represent the hidden variables, the triangles are the means and the solid line the ellipse which includes the 90\% of the mass of the Gaussian, in this case recalling the general case described in the previous section and following the equations \ref{ec:par1} and \ref{ec:r}.
 
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=.8\textwidth]{./pics/3c.pdf}
-	\caption{Expectation maximization: 90\% mass of the Gaussian}
+	\caption{Expectation maximization in the general case: 90\% mass of the Gaussian}
 	\label{fig:3c}
 \end{figure}
 
 \subsection*{d}
-\begin{figure} [H]
+The results over the test dataset are shown in Figure \ref{fig:3d}. Figure \ref{fig:3bTest} correspond to the isotropic case and Figure \ref{fig:3cTest} to the general case.
+\begin{figure} [h!]
 \centering
   \subfloat[Diagonal $\Sigma$]{\label{fig:3bTest} 
-  		\includegraphics[width=.5\textwidth]{./pics/3bTest.pdf}} 
+  		\includegraphics[width=.4\textwidth]{./pics/3bTest.pdf}} \hspace{20pt}
   \subfloat[General form $\Sigma$]{\label{fig:3cTest} 
-  		\includegraphics[width=.5\textwidth]{./pics/3cTest.pdf}} \\
+  		\includegraphics[width=.4\textwidth]{./pics/3cTest.pdf}} \\
   \caption{Results on test data} 
   \label{fig:3d}
 \end{figure}
+As can be seen the obtained results are also very good for the test dataset. For the general case the big majority of samples fall inside the drawn ellipse, and the learned model fits the data very well.\\
 
-\begin{table}[H]
+A comparison of the final Likelihood obtained at the end of the algorithm is shown in Table \ref{tab:Likelihood}.
+\begin{table}[h!]
 \centering
 	\begin{tabular}{c|c|c|} 
 	\cline{2-3}
@@ -249,5 +281,5 @@ In the case of general form matrix $\Sigma$, we have the classical updating form
 	\caption{Final Likelihood}
 	\label{tab:Likelihood}
 \end{table}
-
+As can be seen, the Likelihood is greater for the general case in both datasets, as expected. Also it can be noticed that the performance enhances a bit in the test dataset comparing to the training one for the general case, which means that the learned model fits very well the true distribution of samples, as it performs a very good classification for new samples.
 \end{document}
