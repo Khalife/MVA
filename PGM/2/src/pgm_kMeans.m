@@ -1,6 +1,6 @@
-function finalMu = pgm_kMeans(x, c, opt)
+function [finalMu, finalLabel] = pgm_kMeans(x, c, opt)
 % -------------------------------------------------------------------------
-% function mu = pgm_kMeans(x, c)
+% function [finalMu, finalLabel] = pgm_kMeans(x, c, opt)
 % -------------------------------------------------------------------------
 % inputs: 
 %       - x:   data dxN to be classified. d is the dimension, and N the
@@ -8,8 +8,9 @@ function finalMu = pgm_kMeans(x, c, opt)
 %       - c:   number of clusters to use
 %       - opt: struct with options
 % outputs:
-%       - finalMu: matrix of dimensions dxc with the final position of the
-%                  means of each cluster
+%       - finalMu:    matrix of dimensions dxc with the final position of 
+%                     the means of each cluster
+%       - finalLabel: Nx1 vector of final labels of x
 % -------------------------------------------------------------------------
 
 %% Data and initialization
@@ -19,7 +20,7 @@ if nargin<3
 end
 
 [d,N] = size(x);
-mu(:,:,1) = randn(d,c); % Randomly initialized means
+mu(:,:,1) = 10*randn(d,c); % Randomly initialized means
 
 t = 1;
 J = 1;
@@ -55,5 +56,5 @@ if opt.plot >= 1
         end
     axis tight
 end
-
 finalMu = mu(:,:,end);
+finalLabel = l;
